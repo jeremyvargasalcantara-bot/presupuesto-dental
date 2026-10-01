@@ -10,33 +10,43 @@
 <body>
     <form action="/guardar-paciente" method="post">
         <label for="name">Nombre Completo:</label>
-        <input type="name" id="name" name="name" />
+        <input type="text" id="name" name="name" />
         <label for="number">Cedula:</label>
-        <input type="text" id="number" name="number" inputmode="numeric" placeholder="000-0000000-0" maxlength="13"
-            pattern="\d{3}-\d{7}-\d{1}" title="Formato requerido: 000-0000000-0" required />
+        <input type="text" id="Cedula_paciente" name="Cedula" inputmode="numeric" placeholder="000-0000000-0"
+            maxlength="13" pattern="\d{3}-\d{7}-\d{1}" title="Formato requerido: 000-0000000-0" required />
         <label for="tel">Telefono:</label>
         <input type="tel" id="tel" name="tel" />
         <label for="email">Correo Electronico:</label>
         <input type="email" id="email" name="email" />
         <label for="date">Fecha de nacimiento:</label>
-        <input type="date" name="date" id="date" title="Introduce tu Fecha de nacimiento" />
-        <label for="sexo">Sexo:</label>
-        <select id="sexo" name="sexo" required>
-            <option value="" disabled selected>Seleccione una opción</option>
-            <option value="Femenino">Femenino</option>
-            <option value="Masculino">Masculino</option>
-        </select>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" title="Introduce tu Fecha de nacimiento" />
+
+        <fieldset>
+            <legend>Información Biológica</legend>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+            </select>
+        </fieldset>
+
         <label for="text">Padece alergias o alguna condicion Medica:</label>
-        <textarea name="text" id="text"></textarea>
-        <label>¿Tiene seguro médico?</label>
-        <div>
-            <input type="radio" id="seguro_si" name="seguro_medico" value="si" required>
-            <label for="seguro_si">Sí</label>
-        </div>
-        <div>
-            <input type="radio" id="seguro_no" name="seguro_medico" value="no">
-            <label for="seguro_no">No</label>
-        </div>
+        <textarea name="condiciones_medicas" id="condiciones_medicas"></textarea>
+
+        <fieldset>
+            <legend>¿Tiene seguro médico?</legend>
+
+            <div>
+                <input type="radio" id="seguro_si" name="seguro_medico" value="si" required />
+                <label for="seguro_si">Sí</label>
+            </div>
+
+            <div>
+                <input type="radio" id="seguro_no" name="seguro_medico" value="no" />
+                <label for="seguro_no">No</label>
+            </div>
+        </fieldset>
         <button type="submit">Guardar Paciente</button>
     </form>
 </body>
