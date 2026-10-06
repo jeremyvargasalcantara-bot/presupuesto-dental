@@ -12,24 +12,25 @@
 
         <div>
             <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" required minlength="8" placeholder="Ej: Juan Perez" />
+            <input type="text" id="nombre" name="nombre" required minlength="5" placeholder="Ej: Juan Perez" />
         </div>
 
         <div>
             <label for="cedula_paciente">Cedula:</label>
-            <input type="text" id="cedula_paciente" name="cedula_paciente" inputmode="text" placeholder="000-0000000-0"
+            <input type="text" id="cedula_paciente" name="cedula_paciente" inputmode="tel" placeholder="000-0000000-0"
                 maxlength="13" pattern="\d{3}-\d{7}-\d{1}" title="Formato requerido: 000-0000000-0" required />
         </div>
 
         <div>
             <label for="telefono">Telefono:</label>
             <input type="tel" id="telefono" name="telefono" pattern="(809|829|849)-\d{3}-\d{4}"
-                title="El teléfono debe iniciar con 809, 829 o 849 en formato: 809-000-0000" required />
+                title="El teléfono debe iniciar con 809, 829 o 849 en formato: 809-000-0000" placeholder="809-000-0000"
+                required />
         </div>
 
         <div>
             <label for="correo">Correo Electronico:</label>
-            <input type="email" id="correo" name="correo" />
+            <input type="email" id="correo" name="correo" placeholder="Ej: Juanperez@gmail.com" />
         </div>
 
         <div>
