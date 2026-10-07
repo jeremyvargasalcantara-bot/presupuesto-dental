@@ -4,4 +4,12 @@ color: white;
 a{
     color: inherit;
 }
-.campo-error      { border: 2px solid red; }
+input:user-invalid {
+  border: 2px solid #e53e3e;
+  outline: none;
+}
+
+/* Opcional: estado válido tras interactuar */
+input:user-valid {
+  border: 2px solid #38a169;
+}
