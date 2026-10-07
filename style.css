@@ -1,0 +1,7 @@
+body {
+color: white;
+}
+a{
+    color: inherit;
+}
+.campo-error      { border: 2px solid red; }
