@@ -1,3 +1,11 @@
+/*Esto Aplica border box a todo el documento*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding:auto;
+}
+
 input:user-invalid {
   border: 2px solid #e53e3e;
   outline: none;
