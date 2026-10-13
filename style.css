@@ -6,6 +6,13 @@
     padding:auto;
 }
 
+/*Max Width agregado*/
+form{
+    width: 100%x;
+    max-width: 480px;
+    margin-inline: auto;
+}
+
 input:user-invalid {
   border: 2px solid #e53e3e;
   outline: none;
