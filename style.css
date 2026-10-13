@@ -248,3 +248,19 @@ tfoot td {
   color: #0066cc;
   font-weight: bold;
 }
+.pie-presupuesto {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.pie-presupuesto p {
+  margin: 4px 0;
+}
+
+.nota-itbis {
+  font-style: italic;
+}
