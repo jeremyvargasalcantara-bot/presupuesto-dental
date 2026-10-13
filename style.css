@@ -36,7 +36,7 @@ label{
 
 /*Campos ocupan todo el ancho con espacio interior*/
 input{
-    width: 60%;
+    width: 100%;
     padding: 10px 12px ;    
 }
 input:focus-visible,
@@ -46,7 +46,7 @@ button:focus-visible {
 }
 /*Max Width agregado*/
 form{
-    width: 100%x;
+    width: 100%;
     max-width: 480px;
     margin-inline: auto;
 }
@@ -95,4 +95,8 @@ legend {
   display: inline;
   width: auto;
   cursor: pointer;
+}
+.campo-texto {
+  width: 100%;
+  padding: 10px 12px;
 }
