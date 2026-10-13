@@ -2,7 +2,8 @@
 *,
 *::before,
 *::after{
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    
 }
 /*estilos al botton*/
 button {
@@ -28,9 +29,6 @@ div{
 /* colocando label encima de cada input*/
 label{
     display: block;
-}
-.opcion-radio label {
-  display: inline;
 }
 
 /*Campos ocupan todo el ancho con espacio interior*/
