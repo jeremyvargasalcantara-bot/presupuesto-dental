@@ -135,3 +135,44 @@ legend {
   font-size: 0.9rem;
   color: #555555;
 }
+/* Contenedor general de la sección */
+.seccion-paciente {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+
+.seccion-paciente h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 6px;
+}
+
+/* Formato de cuadrícula para los datos */
+.datos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable a pantallas pequeñas */
+  gap: 12px 24px;
+  margin: 0;
+}
+
+.dato-item {
+  display: flex;
+  gap: 8px;
+}
+
+/* Término (Etiqueta en negrita) */
+.dato-item dt {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Detalle (Valor) */
+.dato-item dd {
+  margin: 0;
+  color: #222;
+}
