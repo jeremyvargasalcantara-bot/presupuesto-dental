@@ -5,6 +5,12 @@
     box-sizing: border-box;
     padding:auto;
 }
+
+/*Separando los div este codigo obliga a empujar hacia bajo el siguiente bloque*/
+div{
+    margin-bottom: 16px;
+}
+
 /* colocando label encima de cada input*/
 label{
     display: block;
