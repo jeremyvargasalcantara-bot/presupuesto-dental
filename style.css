@@ -5,6 +5,21 @@
     box-sizing: border-box;
     padding:auto;
 }
+/*Mejoras al botton*/
+button {
+  background-color: #0066cc; /* Color base */
+  color: #ffffff;            /* Color del texto */
+  border: none;              /* Quita el borde gris por defecto */
+  border-radius: 6px;        /* Esquinas redondeadas */
+  padding: 12px 20px;        /* Espacio interior para darle cuerpo */
+  font-size: 1rem;
+  cursor: pointer;           /* Cambia el puntero a la manito */
+}
+
+/* Cambia el estilo únicamente al pasar el mouse por encima */
+button:hover {
+  background-color: #004b99; /* Oscurece un poco el color */
+}
 
 /*Separando los div este codigo obliga a empujar hacia bajo el siguiente bloque*/
 div{
