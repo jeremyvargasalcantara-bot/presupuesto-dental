@@ -56,19 +56,22 @@
                 placeholder="Escriba aquí si padece alguna alergia o condición especial (máximo 500 caracteres)..."></textarea>
         </div>
 
-        <fieldset>
-            <legend>¿Tiene seguro médico?</legend>
+       <fieldset>
+  <legend>¿Tiene seguro médico?</legend>
 
-            <div>
-                <input type="radio" id="seguro_si" name="seguro_medico" value="si" required />
-                <label for="seguro_si">Sí</label>
-            </div>
+  <!-- ambas opciones en un solo contenedor -->
+  <div class="contenedor-opciones">
+    <div class="opcion-radio">
+      <input type="radio" id="seguro_si" name="seguro_medico" value="si" required />
+      <label for="seguro_si">Sí</label>
+    </div>
 
-            <div>
-                <input type="radio" id="seguro_no" name="seguro_medico" value="no" />
-                <label for="seguro_no">No</label>
-            </div>
-        </fieldset>
+    <div class="opcion-radio">
+      <input type="radio" id="seguro_no" name="seguro_medico" value="no" />
+      <label for="seguro_no">No</label>
+    </div>
+  </div>
+</fieldset>
 
         <button type="submit">Guardar Paciente</button>
     </form>

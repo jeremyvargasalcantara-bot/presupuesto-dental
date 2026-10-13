@@ -30,10 +30,13 @@ div{
 label{
     display: block;
 }
+.opcion-radio label {
+  display: inline;
+}
 
 /*Campos ocupan todo el ancho con espacio interior*/
 input{
-    width: 100%;
+    width: 60%;
     padding: 10px 12px ;    
 }
 input:focus-visible,
@@ -55,4 +58,41 @@ input:user-invalid {
 /* Opcional: estado válido tras interactuar */
 input:user-valid {
   border: 2px solid #38a169;
+}
+
+/* Quita bordes por defecto del fieldset */
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* 1. Ponemos el 'Sí' y el 'No' en horizontal (uno al lado del otro) */
+.contenedor-opciones {
+  display: flex;
+  gap: 20px; /* Separación entre la opción "Sí" y la opción "No" */
+}
+
+/* 2. Alineamos el círculo pegadito a su texto ("Sí" / "No") */
+.opcion-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* Separación estrecha entre el círculo y la palabra */
+}
+
+/* 3. Aseguramos que los radio y sus labels no hereden width: 100% ni display: block */
+.opcion-radio input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
+.opcion-radio label {
+  display: inline;
+  width: auto;
+  cursor: pointer;
 }
