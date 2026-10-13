@@ -10,6 +10,12 @@ label{
     display: block;
 }
 
+/*Campos ocupan todo el ancho con espacio interior*/
+input{
+    width: 100%;
+    padding: 10px 12px ;
+}
+
 /*Max Width agregado*/
 form{
     width: 100%x;
