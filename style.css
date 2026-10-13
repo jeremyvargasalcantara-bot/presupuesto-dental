@@ -49,8 +49,7 @@ form{
 }
 
 input:user-invalid {
-  border: 2px solid #e53e3e;
-  outline: none;
+  border: 2px solid #e53e3e; 
 }
 
 /* Opcional: estado válido tras interactuar */
