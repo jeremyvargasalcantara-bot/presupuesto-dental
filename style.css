@@ -2,8 +2,7 @@
 *,
 *::before,
 *::after{
-    box-sizing: border-box;
-    padding:auto;
+    box-sizing: border-box;    
 }
 /*estilos al botton*/
 button {
