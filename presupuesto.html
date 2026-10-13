@@ -1,118 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Presupuesto Dental</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Presupuesto Dental</title>
 </head>
-<header class="encabezado-clinica">
+
+<body>
+  <header class="encabezado-clinica">
     <!-- Datos de la clínica (Izquierda) -->
     <div class="datos-clinica">
-        <h1>Clínica Sonrisa Dentina</h1>
-        <p class="rnc">RNC: 1-30-12345-6</p>
+      <h1>Clínica Sonrisa Dentina</h1>
+      <p class="rnc">RNC: 1-30-12345-6</p>
     </div>
 
     <!-- Datos del documento / factura (Derecha) -->
     <div class="datos-presupuesto">
-        <p class="numero-presupuesto">Presupuesto N.º 0001</p>
-        <p class="fecha">Fecha: 13/10/2026</p>
+      <p class="numero-presupuesto">Presupuesto N.º 0001</p>
+      <p class="fecha">Fecha: 13/10/2026</p>
     </div>
-</header>
+  </header>
 
-<body>
-<main>
-  <!-- Sección 1: Datos del paciente -->
-  <section class="seccion-paciente">
-    <h2>Datos del Paciente</h2>
 
-    <dl class="datos-grid">
-      <div class="dato-item">
-        <dt>Nombre:</dt>
-        <dd>Juan Pérez González</dd>
-      </div>
+  <main>
+    <!-- Sección 1: Datos del paciente -->
+    <section class="seccion-paciente">
+      <h2>Datos del Paciente</h2>
 
-      <div class="dato-item">
-        <dt>Cédula:</dt>
-        <dd>001-1234567-8</dd>
-      </div>
+      <dl class="datos-grid">
+        <div class="dato-item">
+          <dt>Nombre:</dt>
+          <dd>Juan Pérez González</dd>
+        </div>
 
-      <div class="dato-item">
-        <dt>Teléfono:</dt>
-        <dd>(809) 555-0199</dd>
-      </div>
-    </dl>
-  </section>
+        <div class="dato-item">
+          <dt>Cédula:</dt>
+          <dd>001-1234567-8</dd>
+        </div>
 
-  <section class="seccion-procedimientos">
-  <h2>Procedimientos</h2>
+        <div class="dato-item">
+          <dt>Teléfono:</dt>
+          <dd>809-555-0199</dd>
+        </div>
+      </dl>
+    </section>
 
-  <table class="tabla-procedimientos">
-    <thead>
-      <tr>
-        <th scope="col">Código</th>
-        <th scope="col">Procedimiento</th>
-        <th scope="col">Pieza</th>
-        <th scope="col">Cantidad</th>
-        <th scope="col">Precio unitario (RD$)</th>
-        <th scope="col">¿Gravado?</th>
-        <th scope="col">Subtotal (RD$)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>PREV-01</td>
-        <td>Profilaxis (limpieza)</td>
-        <td>—</td>
-        <td>1</td>
-        <td>1,500.00</td>
-        <td>No</td>
-        <td>1,500.00</td>
-      </tr>
-      <tr>
-        <td>REST-02</td>
-        <td>Resina compuesta</td>
-        <td>16</td>
-        <td>2</td>
-        <td>2,500.00</td>
-        <td>No</td>
-        <td>5,000.00</td>
-      </tr>
-      <tr>
-        <td>EST-01</td>
-        <td>Blanqueamiento dental</td>
-        <td>—</td>
-        <td>1</td>
-        <td>12,000.00</td>
-        <td>Sí</td>
-        <td>12,000.00</td>
-      </tr>
-    </tbody>
+    <section class="seccion-procedimientos">
+      <h2>Procedimientos</h2>
 
-<!-- Pie de tabla con los totales -->
-  <tfoot>
-    <tr>
-      <td colspan="6" class="texto-total">Subtotal:</td>
-      <td class="monto-total">RD$ 18,500.00</td>
-    </tr>
-    <tr>
-      <td colspan="6" class="texto-total">ITBIS (18 %):</td>
-      <td class="monto-total">RD$ 2,160.00</td>
-    </tr>
-    <tr class="fila-total-definitivo">
-      <td colspan="6" class="texto-total">Total:</td>
-      <td class="monto-total">RD$ 20,660.00</td>
-    </tr>
-  </tfoot>
-    
-  </table>
-</section>
-</main>
-<!-- Pie de página con notas aclaratorias -->
+      <table class="tabla-procedimientos">
+        <caption>Detalles de Procedimientos Médicos y Costos</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Procedimiento</th>
+            <th scope="col">Pieza</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio unitario (RD$)</th>
+            <th scope="col">¿Gravado?</th>
+            <th scope="row">Subtotal (RD$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PREV-01</td>
+            <td>Profilaxis (limpieza)</td>
+            <td>—</td>
+            <td>1</td>
+            <td>1,500.00</td>
+            <td>No</td>
+            <td>1,500.00</td>
+          </tr>
+          <tr>
+            <td>REST-02</td>
+            <td>Resina compuesta</td>
+            <td>16</td>
+            <td>2</td>
+            <td>2,500.00</td>
+            <td>No</td>
+            <td>5,000.00</td>
+          </tr>
+          <tr>
+            <td>EST-01</td>
+            <td>Blanqueamiento dental</td>
+            <td>—</td>
+            <td>1</td>
+            <td>12,000.00</td>
+            <td>Sí</td>
+            <td>12,000.00</td>
+          </tr>
+        </tbody>
+        <!-- Pie de tabla con los totales -->
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="6" class="texto-total">Subtotal:</th>
+            <td class="monto-total">RD$ 18,500.00</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="6" class="texto-total">ITBIS (18 %):</th>
+            <td class="monto-total">RD$ 2,160.00</td>
+          </tr>
+          <tr class="fila-total-definitivo">
+            <th scope="row" colspan="6" class="texto-total">Total:</th>
+            <td class="monto-total">RD$ 20,660.00</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </section>
+  </main>
+  <!-- Pie de página con notas aclaratorias -->
   <footer class="pie-presupuesto">
     <p>Presupuesto válido por 30 días.</p>
     <p class="nota-itbis">Los servicios de salud están exentos de ITBIS.</p>
   </footer>
 </body>
+
 </html>
