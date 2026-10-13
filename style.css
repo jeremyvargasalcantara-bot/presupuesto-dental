@@ -49,7 +49,7 @@ form{
 }
 
 input:user-invalid {
-  border: 2px solid #e53e3e; 
+border: 2px solid #e53e3e; 
 }
 
 /* Opcional: estado válido tras interactuar */
@@ -96,4 +96,42 @@ legend {
 .campo-texto {
   width: 100%;
   padding: 10px 12px;
+}
+.encabezado-clinica {
+  display: flex;
+  justify-content: space-between; /* Empuja un bloque a la izquierda y el otro a la derecha */
+  align-items: center;            /* Centra verticalmente ambos bloques */
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e0e0e0; /* Línea divisoria inferior */
+  margin-bottom: 24px;
+}
+
+/* Estilos de la parte izquierda */
+.datos-clinica h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0066cc; /* Color representativo/médico */
+}
+
+.datos-clinica .rnc {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* Estilos de la parte derecha */
+.datos-presupuesto {
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.numero-presupuesto {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.fecha {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: #555555;
 }
