@@ -5,6 +5,10 @@
     box-sizing: border-box;
     padding:auto;
 }
+/* colocando label encima de cada input*/
+label{
+    display: block;
+}
 
 /*Max Width agregado*/
 form{
