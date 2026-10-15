@@ -2,3 +2,8 @@
     display: flex;
     justify-content: space-between;
 }
+.datos-presupuesto{
+flex-direction: column;
+text-align: end;
+justify-content: space-between;
+}
