@@ -1,0 +1,4 @@
+.encabezado-clinica{
+    display: flex;
+    justify-content: space-between;
+}
