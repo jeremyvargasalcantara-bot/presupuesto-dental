@@ -53,3 +53,8 @@ justify-content: space-between;
 .tabla-procedimientos tfoot td{
     text-align: right;  /*Mueve los totales al final*/
 }
+/*Alineacion o ubicacion correcta del pie de pagina*/
+.pie-presupuesto{
+text-align: center;
+color:grey;
+}
