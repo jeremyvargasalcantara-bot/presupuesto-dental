@@ -1,6 +1,9 @@
 .encabezado-clinica{
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid grey;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 .datos-presupuesto{
 flex-direction: column;
