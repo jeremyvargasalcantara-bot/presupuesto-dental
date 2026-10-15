@@ -1,3 +1,4 @@
+/*Alineacion de Encabezado Presupuesto fecha y RNC*/
 .encabezado-clinica{
     display: flex;
     justify-content: space-between;
@@ -10,6 +11,7 @@ flex-direction: column;
 text-align: end;
 justify-content: space-between;
 }
+/*Alinecacion de Datos del Paciente nombre cedula Telefono*/
 .datos-grid{
     display: flex;  
     justify-content: flex-start;
@@ -27,4 +29,27 @@ justify-content: space-between;
 }
 .datos-grid dd{
     margin: 0;
+}
+/* Alineacion Procedimientos subtotal ItBIS y demas*/
+.seccion-procedimientos {
+  display: flex;
+  flex-direction: column;   
+  align-items: flex-start;  
+  gap: 15px;                
+  width: 100%;              
+}
+.tabla-procedimientos{
+    width: 100%;
+    border-collapse: collapse;  /* Esto impide que procedimientos tenga espacios extraños*/
+}
+.tabla-procedimientos th,
+.tabla-procedimientos td{
+    text-align: left;
+    padding: 8px 12px;
+}
+.tabla-procedimientos tfoot th{
+    text-align: right;  /*Mueve subtotal itbis y total a la derecha*/
+}
+.tabla-procedimientos tfoot td{
+    text-align: right;  /*Mueve los totales al final*/
 }
