@@ -11,7 +11,10 @@
     
 }
 .datos-presupuesto{ 
-text-align: end;
+display: flex;    
+flex-direction: column;
+align-items: flex-start;
+text-align: right;
 }
 /*Alinecacion de Datos del Paciente nombre cedula Telefono*/
 .datos-grid{
