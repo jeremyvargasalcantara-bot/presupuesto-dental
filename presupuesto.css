@@ -24,18 +24,15 @@ text-align: end;
 .dato-item{
     display: flex;
     flex-direction:column;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: flex-start;    
     gap: 4px;
 }
 .datos-grid dt{
     text-transform: uppercase;
-    font-weight: bold; 
-    flex-wrap: wrap;   
+    font-weight: bold;    
 }
 .datos-grid dd{
     margin: 0;
-    flex-wrap: wrap;
 }
 /* Alineacion Procedimientos subtotal ItBIS y demas*/
 .seccion-procedimientos {
