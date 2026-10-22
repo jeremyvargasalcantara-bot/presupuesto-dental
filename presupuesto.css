@@ -26,6 +26,7 @@ text-align: end;
     flex-direction:column;
     align-items: flex-start;    
     gap: 4px;
+    flex: 1 1 150px; 
 }
 .datos-grid dt{
     text-transform: uppercase;
