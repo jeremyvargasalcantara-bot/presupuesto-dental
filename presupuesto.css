@@ -43,6 +43,24 @@ align-items: flex-start;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
 }
+.tarjeta-resumen {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid gray;          
+  border-radius: 8px;              
+  background-color: lightgray;     
+}
+/* Formato de los textos */
+.tarjeta-resumen .etiqueta {
+  font-weight: bold;
+  color: black;                   
+  margin-bottom: 8px;
+}
+.tarjeta-resumen .monto {
+  font-weight: bold;
+  color: black;                   
+}
 
 /* Alineacion Procedimientos subtotal ItBIS y demas*/
 .seccion-procedimientos {
