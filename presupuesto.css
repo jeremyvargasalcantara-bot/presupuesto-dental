@@ -37,6 +37,13 @@ align-items: flex-start;
 .datos-grid dd{
     margin: 0;
 }
+/*Alineacion de Resumen*/
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
 /* Alineacion Procedimientos subtotal ItBIS y demas*/
 .seccion-procedimientos {
   display: flex;
