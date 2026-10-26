@@ -58,8 +58,7 @@ align-items: flex-start;
   margin-bottom: 8px;
 }
 .tarjeta-resumen .monto {
-  font-weight: bold;
-  color: black;                   
+  font-weight: bold;                  
 }
 
 /* Alineacion Procedimientos subtotal ItBIS y demas*/
