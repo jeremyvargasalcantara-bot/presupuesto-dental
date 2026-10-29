@@ -95,3 +95,6 @@ color:grey;
 .numero{
     text-align:right;
 }
+.tabla-scroll{
+    overflow-x: auto;
+}
