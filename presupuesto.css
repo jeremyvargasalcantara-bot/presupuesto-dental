@@ -89,7 +89,7 @@ align-items: flex-start;
 text-align: center;
 color:grey;
 }
-.tabla-procedimientos.numero{
+.tabla-procedimientos .numero{
     text-align:right;
 }
 .tabla-scroll{
