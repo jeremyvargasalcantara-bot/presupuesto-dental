@@ -89,9 +89,7 @@ align-items: flex-start;
 text-align: center;
 color:grey;
 }
-.tabla-procedimientos{
-    text-align:right;
-}
+.tabla-procedimientos,
 .numero{
     text-align:right;
 }
